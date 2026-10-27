@@ -1,6 +1,7 @@
 from qiskit import QuantumCircuit
 from qiskit_aer import AerSimulator
 qc = QuantumCircuit(3,3)
+qc.x(0)
 qc.h(1)
 qc.cx(1,2)
 qc.barrier()
