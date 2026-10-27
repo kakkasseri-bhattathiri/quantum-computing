@@ -9,3 +9,5 @@ qc.measure(1,1)
 simualator = AerSimulator()
 result = simualator.run(qc, shots = 1000).result().get_counts()
 print("the result is:" , result)
+
+

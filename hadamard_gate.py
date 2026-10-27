@@ -7,4 +7,3 @@ qc.measure(0,0) # measure the result and then store it in the classical bit that
 simulate = AerSimulator() #simulatorine aavahikka
 result  = simulate.run(qc, shots = 1000).result().get_counts() # do the previous steps in one line
 print("the result will be :", result)
-
