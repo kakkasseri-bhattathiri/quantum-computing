@@ -1,7 +1,20 @@
 from qiskit import QuantumCircuit
 from qiskit_aer import AerSimulator
 qc = QuantumCircuit(3,3)
-qc.h(0)
+print("choose an initial state for the qubit")
+print("for |0>, type 0")
+print("for |1>, type 1")
+print("for |+>, type +")
+print("for |->, type -")
+choice = input("Enter your choice: ").strip()
+if choice == "1":
+    qc.x(0)
+elif choice == "+":
+    qc.h(0)
+elif choice == "-":
+    qc.x(0)
+    qc.h(0)
+qc.barrier()
 qc.h(1)
 qc.cx(1,2)
 qc.barrier()
