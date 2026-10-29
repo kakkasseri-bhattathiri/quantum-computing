@@ -23,4 +23,4 @@ for t in range(5):
     qc.measure(t,t)
 simulator = AerSimulator()
 result = simulator.run(qc, shots = 1000).result().get_counts()
-
+print(result)
